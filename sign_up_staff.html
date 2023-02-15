@@ -1,0 +1,118 @@
+<html>
+<head>
+<style>
+body{
+    background-color:#E6E6FA;
+}
+
+form{
+    background-color: white;
+    padding:20px;
+    margin:0 auto;
+}
+
+.container form{
+    position:relative;
+    width:1000px;
+    height:750px;
+    background-color: rgba(196, 68, 68, 0.836);
+    z-index:10000;
+    padding:20px 20px;
+    color:white;
+    border-radius:10px;
+    border:1px solid;
+    margin-top: 10px;
+    /*text-align: center;*/
+}
+
+input[type=file]{
+    text-align: center;
+}
+
+img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text]{
+    width:1000px;
+    height:25px;
+    border-radius:2px;
+    border:none; 
+    box-sizing:border-box; 
+}
+
+input[type=password]{
+    width:1000px;
+    height:25px;
+    border-radius:2px;
+    border:none;
+    box-sizing:border-box;
+    z-index:10000;
+}
+
+input[type=submit]{
+    width:300px;
+    height:35px;
+    border-radius:15px;
+    border:none;
+    box-sizing:border-box;
+    
+}
+
+input[type=reset]{
+    width:300px;
+    height:35px;
+    border-radius:15px;
+    border:none;
+    box-sizing:border-box;
+    
+}
+
+a:hover{
+    color: #E6E6FA;
+}
+
+.photo{
+    text-align: center;
+}
+.submit-btn{
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <form action="insert_staff.php" method="POST" enctype="multipart/form-data">
+    <img src="profile.png" alt="profile" width="150px" height="150px"><br>
+    <div class="photo">
+    <label for="myimage">Profile Photo :</label>
+    <input type="file" id="myimage" name="photo"><br><br>
+    </div>
+    <label for="idno">Staff Id :</label><br>
+    <input type="text" id="idno" name="id" autofocus><br><br>
+    <label for="name">Name :</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="ic">IC Number :</label><br>
+    <input type="text" id="ic" name="icno"><br><br>
+    <label for="address">Address :</label><br>
+    <input type="text" id="address" name="address"><br><br>
+    <label for="phone">Phone Number :</label><br>
+    <input type="text" id="phone" name="phone"><br><br>
+    <label for="position">Position :</label><br>
+    <input type="text" id="position" name="post"><br><br>
+    <label for="email">Email :</label><br>
+    <input type="text" id="email" name="email"><br><br>
+    <label for="password">Password :</label><br>
+    <input type="password" id="password" name="pass"><br><br><br>
+    <div class="submit-btn">
+         <input type="submit" name="submit" value="Sign-up as Staff"> or 
+         <input type="reset" name="reset" value="Reset"><br>
+    </div>
+       
+    </form>
+</div>
+</body>
+</html>

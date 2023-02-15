@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+    body{
+        background: url('nature1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    div.nature{
+        margin:60px;
+        border:1px solid gray;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        float:left;
+        width:200px;
+    }
+
+    div.nature:hover{
+        border:2px solid black;
+        opacity: 0.8;
+        
+    }
+
+    div.galery img{
+        width: 100%;
+        height: auto; 
+        
+    }
+
+    div.note{
+        padding:5px;
+        text-align:center;
+        background-color: aliceblue;
+    }
+
+    div.square{
+        background-color: black;
+        width:60px;
+        height:60px;
+        animation-name: square;
+        animation-duration: 3s;
+        border-radius: 5px;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes square{
+        from{ top:0px;}
+        to {top:200px; background-color:white; opacity:0.3;}
+    }
+</style>
+</head>
+<body>
+    <h1 style="color:brown;text-align: center;padding:5px;">NATURE ALBUM</h1>
+
+<div class="nature">
+    <a href="nature2.jpg" target="_blank">
+        <img src="nature2.jpg" alt="pink-house" width="200" height="200" >
+    </a>
+    <div class="note">please write any memories that you having at this place</div>
+</div>
+<div class="nature">
+    <a href="nature1.jpg" target="_blank">
+        <img src="nature1.jpg" alt="pink-house" width="200" height="200" >
+    </a>
+    <div class="note">please write any memories that you having at this place</div>
+</div>
+<div class="nature">
+    <a href="nature3.jpg" target="_blank">
+        <img src="nature3.jpg" alt="pink-house" width="200" height="200" >
+    </a>
+    <div class="note">please write any memories that you having at this place</div>
+</div>
+<div class="nature">
+    <a href="nature4.jpg" target="_blank">
+        <img src="nature4.jpg" alt="pink-house" width="200" height="200" >
+    </a>
+    <div class="note">please write any memories that you having at this place</div>
+</div>
+
+<div class="square">
+
+</div>
+
+</body>
+</html>
